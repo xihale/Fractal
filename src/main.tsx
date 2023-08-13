@@ -4,8 +4,10 @@ import App from './App.tsx'
 
 import './main.scss'
 
+import {BrowserRouter} from 'react-router-dom'
+
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter basename='fractal'><App /></BrowserRouter>
   </React.StrictMode>,
 )
